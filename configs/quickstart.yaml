@@ -1,0 +1,28 @@
+# Explicit release configuration; see docs/PAPER_MAPPING.md.
+name: hd-gmm-quickstart
+seed: 0
+steps: 5000
+log_every: 250
+checkpoint_every: 1000
+output: results/quickstart
+target: final
+plot: true
+protocol_origin: release reconstruction; compact controlled diagnostic
+data:
+  kind: hd_gmm
+  n_samples: 256
+  dim: 24
+  intrinsic_dim: 2
+  num_clusters: 5
+  noise: 0.1
+  preprocess: standardize
+domain:
+  kind: ball
+dynamics:
+  rank: 2
+  eta_x: 0.2
+  eta_w: 0.001
+  diffusion: 0.0001
+  beta: 1.0
+  init_scale: 0.8
+  stabilize_every: null

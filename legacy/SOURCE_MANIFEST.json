@@ -1,0 +1,41 @@
+{
+  "normalization": "Extracted from supplied text; LF line endings and one terminal newline. Mathematical code unchanged.",
+  "files": [
+    {
+      "file": "legacy/README.md",
+      "sha256": "d4275b8e1f20952812a5f0e94b7ccd6703356fc75a8c5ef90a16dcdda078f3fb"
+    },
+    {
+      "file": "legacy/reference_diagnostics.py",
+      "sha256": "46529ad1aae6befc5f2d48cc0ed637ad6c2281b97d9579e6820a08b346c34a20"
+    },
+    {
+      "file": "legacy/requirements.txt",
+      "sha256": "7f58ae518748a6de8fd5d897c28988e0f1983006af1327d009d533b8bc0ef24c"
+    },
+    {
+      "file": "legacy/run_reference_diagnostics.sh",
+      "sha256": "db37d6ab291a5dd04d076d78f3a55bc1b910258784255e9372d56f97df1b8e11"
+    },
+    {
+      "file": "legacy/src/adcrl_gossip.py",
+      "sha256": "c65aa17c7a504d533c81879847f89733ceade94b98e05a881da3a313ad7a242a"
+    },
+    {
+      "file": "legacy/src/data.py",
+      "sha256": "c24e5ea1e2a972dee42f1bea1c1f44334b9ef2cd95ef9df3775483aee66a148d"
+    },
+    {
+      "file": "legacy/src/dcrl_sync.py",
+      "sha256": "27b065a0199fcf883b57b3c467db50c81a68547a2bff936e81b63f8641c21516"
+    },
+    {
+      "file": "legacy/src/metrics.py",
+      "sha256": "ea8e5308ad9934d98dc6663d87af84ae5eea4f600bbc7c9efc55ef964f44e93a"
+    },
+    {
+      "file": "legacy/src/utils.py",
+      "sha256": "a07af573d43ceda07c471f88a4383121aa2070b89f08860056fceabb697e3599"
+    }
+  ]
+}

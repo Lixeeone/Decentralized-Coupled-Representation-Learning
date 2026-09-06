@@ -1,0 +1,41 @@
+name: mechanism-ablations
+output: results/ablations
+seeds:
+- 0
+- 1
+- 2
+jobs:
+- name: full
+  config: quickstart.yaml
+  overrides: {}
+- name: static-x
+  config: quickstart.yaml
+  overrides:
+    dynamics:
+      spatial: false
+- name: frozen-w
+  config: quickstart.yaml
+  overrides:
+    dynamics:
+      plasticity: false
+- name: no-lateral
+  config: quickstart.yaml
+  overrides:
+    dynamics:
+      inhibition: none
+- name: scalar-inhibition
+  config: quickstart.yaml
+  overrides:
+    dynamics:
+      inhibition: scalar
+- name: no-timescale-separation
+  config: quickstart.yaml
+  overrides:
+    dynamics:
+      eta_w: 0.2
+- name: large-step
+  config: quickstart.yaml
+  overrides:
+    dynamics:
+      eta_x: 0.5
+      eta_w: 0.1

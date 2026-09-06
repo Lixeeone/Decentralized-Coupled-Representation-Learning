@@ -1,0 +1,27 @@
+name: timescale-sweep
+output: results/timescales
+seeds:
+- 0
+- 1
+- 2
+jobs:
+- name: ratio-0.005
+  config: quickstart.yaml
+  overrides:
+    dynamics:
+      eta_w: 0.001
+- name: ratio-0.05
+  config: quickstart.yaml
+  overrides:
+    dynamics:
+      eta_w: 0.010000000000000002
+- name: ratio-0.2
+  config: quickstart.yaml
+  overrides:
+    dynamics:
+      eta_w: 0.04000000000000001
+- name: ratio-1
+  config: quickstart.yaml
+  overrides:
+    dynamics:
+      eta_w: 0.2

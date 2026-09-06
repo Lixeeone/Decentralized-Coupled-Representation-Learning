@@ -1,0 +1,32 @@
+# Explicit release configuration; see docs/PAPER_MAPPING.md.
+name: adcrl-ring
+seed: 0
+steps: 10000
+log_every: 1000
+checkpoint_every: 1000
+output: results/adcrl
+target: final
+plot: true
+protocol_origin: release reconstruction; compact controlled diagnostic
+data:
+  kind: hd_gmm
+  n_samples: 64
+  dim: 16
+  intrinsic_dim: 2
+  num_clusters: 5
+  noise: 0.1
+  preprocess: standardize
+domain:
+  kind: ball
+dynamics:
+  rank: 2
+  eta_x: 0.01
+  eta_w: 0.0001
+  diffusion: 0.0001
+  beta: 1.0
+  init_scale: 0.8
+  stabilize_every: null
+method: adcrl
+gossip:
+  alpha: 0.5
+  graph: ring

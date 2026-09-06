@@ -1,0 +1,28 @@
+# Explicit release configuration; see docs/PAPER_MAPPING.md.
+name: paper-scale-hd_gmm
+seed: 0
+steps: 15000
+log_every: 500
+checkpoint_every: 1000
+output: results/paper-scale-hd_gmm
+target: final
+plot: true
+protocol_origin: N,n,m,horizon from manuscript; unspecified parameters reconstructed,
+  not exact table reproduction
+data:
+  kind: hd_gmm
+  n_samples: 1024
+  preprocess: standardize
+  dim: 500
+  intrinsic_dim: 20
+  noise: 0.1
+domain:
+  kind: ball
+dynamics:
+  rank: 20
+  eta_x: 0.002
+  eta_w: 1.0e-05
+  diffusion: 0.0001
+  beta: 1.0
+  init_scale: 0.8
+  stabilize_every: null

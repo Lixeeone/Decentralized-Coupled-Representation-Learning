@@ -1,0 +1,24 @@
+# Explicit release configuration; see docs/PAPER_MAPPING.md.
+name: s_curve
+seed: 0
+steps: 3000
+log_every: 100
+checkpoint_every: 1000
+output: results/s_curve
+target: final
+plot: true
+protocol_origin: release reconstruction; compact controlled diagnostic
+data:
+  kind: s_curve
+  n_samples: 256
+  preprocess: none
+domain:
+  kind: s_curve
+dynamics:
+  rank: 2
+  eta_x: 0.01
+  eta_w: 5.0e-05
+  diffusion: 0.01
+  beta: 1.0
+  init_scale: 0.8
+  stabilize_every: null

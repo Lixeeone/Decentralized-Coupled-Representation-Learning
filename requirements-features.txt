@@ -1,0 +1,5 @@
+# Optional, separate feature-export environment; not part of validated core.
+# Match the PyTorch wheel to your device using the official installation guide.
+torch==2.6.0
+torchvision==0.21.0
+transformers==4.48.3

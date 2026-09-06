@@ -1,0 +1,26 @@
+# Explicit release configuration; see docs/PAPER_MAPPING.md.
+name: synthetic-diagnostics
+output: results/synthetic-suite
+seeds:
+- 0
+- 1
+- 2
+jobs:
+- config: quickstart.yaml
+  name: quickstart
+- config: sphere.yaml
+  name: sphere
+- config: torus.yaml
+  name: torus
+- config: swiss_roll.yaml
+  name: swiss_roll
+- config: s_curve.yaml
+  name: s_curve
+- config: cylinder.yaml
+  name: cylinder
+- config: hyperboloid.yaml
+  name: hyperboloid
+- config: intersecting_planes.yaml
+  name: intersecting_planes
+- config: adcrl.yaml
+  name: adcrl

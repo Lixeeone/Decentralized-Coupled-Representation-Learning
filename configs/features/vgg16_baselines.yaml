@@ -1,0 +1,20 @@
+# Original feature archive required for exact manuscript comparison.
+output: results/vgg16-baselines
+data:
+  kind: features
+  path: data/vgg16.npy
+  preprocess: standardize
+  sha256: null
+  max_samples: 20000
+  expected_dim: 4096
+  expected_samples: 60000
+seeds:
+- 0
+- 1
+- 2
+rank: 8
+steps: 2000
+learning_rate: 0.0001
+batch_size: 128
+normalize_every: 10
+workers: 4

@@ -1,0 +1,6 @@
+# Minimal dependencies for the anonymous DCRL reference implementation.
+# The package is intentionally lightweight and uses self-contained reference inputs only.
+
+numpy>=1.24
+scipy>=1.10
+scikit-learn>=1.2

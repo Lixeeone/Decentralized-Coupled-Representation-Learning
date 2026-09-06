@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="490" viewBox="0 0 1440 490" role="img" aria-labelledby="title desc">
+  <title id="title">DCRL — Decentralized Coupled Representation Learning</title>
+  <desc id="desc">A coupled loop between local spatial exploration and subspace plasticity, with generator, orthogonality and subspace diagnostics.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#101b2b"/><stop offset="1" stop-color="#192d40"/></linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5de0c4"/><stop offset="1" stop-color="#80aeee"/></linearGradient>
+    <marker id="arrow" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><path d="M0 0L6 3.5L0 7" fill="none" stroke="#65ccb9" stroke-width="1.5"/></marker>
+  </defs>
+  <rect width="1440" height="490" rx="18" fill="url(#bg)"/>
+  <path d="M0 458H1440" stroke="#526c80" opacity=".25"/>
+  <g font-family="DejaVu Sans,Arial,sans-serif">
+    <text x="66" y="67" font-size="14" letter-spacing="3.3" fill="#8fabc0">OFFICIAL RESEARCH IMPLEMENTATION</text>
+    <text x="59" y="190" font-size="112" font-weight="700" letter-spacing="-3" fill="#f3f6f9">DCRL</text>
+    <rect x="66" y="215" width="66" height="4" fill="url(#accent)" rx="2"/>
+    <text x="65" y="267" font-size="29" fill="#f0f3f6">Decentralized Coupled</text>
+    <text x="65" y="307" font-size="29" fill="#f0f3f6">Representation Learning</text>
+    <text x="66" y="354" font-size="16" fill="#a3b7c8">Local interactions. Structured macroscopic limits.</text>
+    <g transform="translate(720 58)">
+      <rect width="654" height="324" rx="13" fill="#152537" stroke="#355063"/>
+      <text x="28" y="37" font-size="12" letter-spacing="2.2" fill="#97b2c5">THE COUPLED SYSTEM</text>
+      <rect x="30" y="88" width="238" height="148" rx="10" fill="#1b3444" stroke="#416471"/>
+      <rect x="386" y="88" width="238" height="148" rx="10" fill="#243348" stroke="#4e627e"/>
+      <g stroke="#5de0c4" stroke-width="1.5" opacity=".65">
+        <path d="M79 128L118 108L156 135L207 121L185 166L133 178L79 128L92 177L156 135L133 178L118 108M156 135L185 166" fill="none"/>
+      </g>
+      <g fill="#74dec7"><circle cx="79" cy="128" r="5"/><circle cx="118" cy="108" r="5"/><circle cx="156" cy="135" r="6"/><circle cx="207" cy="121" r="5"/><circle cx="185" cy="166" r="5"/><circle cx="133" cy="178" r="5"/><circle cx="92" cy="177" r="5"/></g>
+      <text x="149" y="213" text-anchor="middle" fill="#d4ede8" font-size="15">Local exploration</text>
+      <g transform="translate(448 108)">
+        <path d="M0 0V70M42 0V70M84 0V70M126 0V70M0 0H126M0 35H126M0 70H126" stroke="#7996bd" opacity=".45"/>
+        <rect x="3" y="3" width="35" height="29" rx="3" fill="#9fbcdf"/>
+        <rect x="45" y="38" width="35" height="29" rx="3" fill="#819fc9"/>
+        <rect x="87" y="3" width="35" height="29" rx="3" fill="#475e80"/>
+        <rect x="3" y="38" width="35" height="29" rx="3" fill="#3c536f"/>
+      </g>
+      <text x="505" y="213" text-anchor="middle" fill="#dae6f5" font-size="15">Subspace plasticity</text>
+      <path d="M268 137H379" stroke="#65ccb9" stroke-width="2" marker-end="url(#arrow)"/>
+      <text x="327" y="123" text-anchor="middle" fill="#a5cfca" font-size="11">observations</text>
+      <path d="M386 189H275" stroke="#65ccb9" stroke-width="2" marker-end="url(#arrow)"/>
+      <text x="327" y="212" text-anchor="middle" fill="#a5cfca" font-size="11">potential</text>
+      <text x="328" y="283" text-anchor="middle" font-size="13" fill="#8ea7bd">FAST SPATIAL STATE   /   SLOW REPRESENTATION</text>
+    </g>
+    <g fill="#a7bdcd" font-size="13" letter-spacing="1.2">
+      <text x="67" y="427">GRAPH-TO-DIFFUSION</text>
+      <circle cx="300" cy="422" r="2" fill="#5de0c4"/>
+      <text x="327" y="427">LYAPUNOV STABILITY</text>
+      <circle cx="552" cy="422" r="2" fill="#5de0c4"/>
+      <text x="580" y="427">PRINCIPAL SUBSPACES</text>
+      <text x="1356" y="427" text-anchor="end" fill="#77b9b8">NUMPY · CPU · REPRODUCIBLE</text>
+    </g>
+  </g>
+</svg>

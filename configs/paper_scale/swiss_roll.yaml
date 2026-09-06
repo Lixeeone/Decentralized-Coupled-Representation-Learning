@@ -1,0 +1,25 @@
+# Explicit release configuration; see docs/PAPER_MAPPING.md.
+name: paper-scale-swiss_roll
+seed: 0
+steps: 15000
+log_every: 500
+checkpoint_every: 1000
+output: results/paper-scale-swiss_roll
+target: final
+plot: true
+protocol_origin: N,n,m,horizon from manuscript; unspecified parameters reconstructed,
+  not exact table reproduction
+data:
+  kind: swiss_roll
+  n_samples: 2048
+  preprocess: none
+domain:
+  kind: swiss_roll
+dynamics:
+  rank: 2
+  eta_x: 0.002
+  eta_w: 1.0e-05
+  diffusion: 0.0001
+  beta: 1.0
+  init_scale: 0.8
+  stabilize_every: null

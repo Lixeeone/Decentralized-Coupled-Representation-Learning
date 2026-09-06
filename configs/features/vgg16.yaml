@@ -1,0 +1,28 @@
+# Original feature archive required for exact manuscript comparison.
+name: vgg16-features
+seed: 0
+steps: 15000
+log_every: 500
+checkpoint_every: 1000
+output: results/vgg16
+target: final
+plot: true
+protocol_origin: paper ambient dimension, N and rank; reconstruction of unspecified
+  step sizes and preprocessing
+data:
+  kind: features
+  path: data/vgg16.npy
+  preprocess: standardize
+  sha256: null
+  expected_dim: 4096
+  expected_samples: 60000
+domain:
+  kind: ball
+dynamics:
+  rank: 128
+  eta_x: 0.002
+  eta_w: 1.0e-05
+  diffusion: 0.0001
+  beta: 1.0
+  init_scale: 0.8
+  stabilize_every: null
